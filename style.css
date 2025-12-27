@@ -105,3 +105,47 @@ section {
   0% { transform: translateY(0) rotate(0deg); opacity:0.8; }
   100% { transform: translateY(100vh) rotate(360deg); opacity:0; }
 }
+
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  z-index: 1;
+}
+
+.cover h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 48px;
+  color: #4b4b4b;
+  margin-bottom: 10px;
+}
+
+.cover p {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  margin-bottom: 40px;
+  color: #4b4b4b;
+}
+
+/* Tombol musik elegan di tengah */
+.play-button {
+  font-family: 'Playfair Display', serif;
+  font-size: 24px;
+  padding: 20px 40px;
+  border-radius: 50px;
+  border: 2px solid #7a9b8c;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #7a9b8c;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-button:hover {
+  background-color: #7a9b8c;
+  color: #fff;
+  transform: scale(1.05);
+}

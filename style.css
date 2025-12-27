@@ -11,10 +11,18 @@ section {
 }
 
 /* COVER */
-.cover {
-  background: url('floral-bg.png') center/cover no-repeat;
-  color: #556b5f;
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #4b4b4b;
+
+  /* Background floral */
+  background: url('floral-bg.png') no-repeat center center fixed;
+  background-size: cover; /* agar menutupi seluruh halaman */
+  background-attachment: fixed; /* tetap di tempat saat scroll */
 }
+
 
 .cover h1 {
   font-family: 'Great Vibes', cursive;
@@ -129,4 +137,5 @@ body::before {
     opacity: 0;
   }
 }
+
 

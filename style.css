@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background: #f8f7f3;
+  color: #4b4b4b;
+}
+
+section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+/* COVER */
+.cover {
+  background: url('floral-bg.png') center/cover no-repeat;
+  color: #556b5f;
+}
+
+.cover h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 64px;
+}
+
+.cover p {
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 2px;
+}
+
+/* AYAT */
+.ayat p {
+  font-family: 'Lora', serif;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* MEMPELAI */
+.mempelai {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.mempelai h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.and {
+  font-size: 48px;
+  font-family: 'Great Vibes';
+  color: #7a9b8c;
+}
+
+/* ACARA */
+.acara {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  width: 280px;
+}
+
+/* COUNTDOWN */
+.countdown h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* MAP */
+.map iframe {
+  width: 90%;
+  height: 300px;
+  border: none;
+  border-radius: 12px;
+}
+
+/* PENUTUP */
+.penutup h2 {
+  font-family: 'Great Vibes';
+  font-size: 48px;
+}

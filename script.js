@@ -33,3 +33,21 @@ for (let i=0;i<totalPetals;i++){
   petal.style.animationDelay = Math.random()*5+'s';
   petalsContainer.appendChild(petal);
 }
+
+const music = document.getElementById('weddingMusic');
+const button = document.getElementById('playMusic');
+
+button.addEventListener('click', () => {
+  // Putar musik
+  music.play().catch(err => console.log(err));
+
+  // Scroll halaman sedikit ke bawah
+  window.scrollBy({
+    top: 100,
+    left: 0,
+    behavior: 'smooth'
+  });
+
+  // Sembunyikan tombol setelah ditekan
+  button.style.display = 'none';
+});

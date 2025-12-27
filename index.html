@@ -1,102 +1,89 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Farah & Ghifary Wedding</title>
-
-  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Great+Vibes&family=Montserrat:wght@300;400;500&family=Lora&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Falling petals -->
-<div id="petals"></div>
 
-<!-- Musik -->
-<audio id="weddingMusic" loop>
-  <source src="music.mp3" type="audio/mpeg">
-</audio>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bgVideo">
+    <source src="bg-video.mp4" type="video/mp4">
+  </video>
 
+  <!-- Overlay supaya teks terbaca -->
+  <div class="overlay"></div>
 
-<!-- COVER -->
-<section class="cover">
-  <h1>Farah & Ghifary</h1>
-  <p>21 - 22 Februari 2030</p>
-</section>
+  <!-- Efek bunga jatuh -->
+  <div id="petals"></div>
 
-<!-- AYAT -->
-<section class="ayat">
-  <p>
-    “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri,
-    agar kamu memperoleh ketenangan, dan Dia menjadikan di antaramu rasa kasih dan sayang.”
-  </p>
-  <span>QS. Ar-Rum : 21</span>
-</section>
+  <!-- Musik scroll-to-play -->
+  <audio id="weddingMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
 
-<!-- MEMPELAI -->
-<section class="mempelai">
-  <div>
-    <h2>Farah Salsabilla Ariama</h2>
-    <p>Putri dari Bapak Arsuni<br>& Ibu Mariyani</p>
-  </div>
-  <span class="and">&</span>
-  <div>
-    <h2>Muhammad Ghifary Fajrin</h2>
-    <p>Putra dari Bapak Amir Taat<br>& Ibu Ratih</p>
-  </div>
-</section>
+  <!-- Cover -->
+  <section class="cover">
+    <h1>Farah & Ghifary</h1>
+    <p>21 - 22 Februari 2030</p>
+  </section>
 
-<!-- ACARA -->
-<section class="acara">
-  <div class="box">
-    <h3>Akad Nikah</h3>
-    <p>Jumat, 21 Februari 2030<br>
-       Pukul 12.00 WITA<br>
-       Claro Makassar
+  <!-- Ayat QS. Ar-Rum -->
+  <section class="ayat">
+    <p>
+      “Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri,
+      agar kamu memperoleh ketenangan, dan Dia menjadikan di antaramu rasa kasih dan sayang.”
     </p>
-  </div>
-  <div class="box">
-    <h3>Resepsi</h3>
-    <p>Sabtu, 22 Februari 2030<br>
-       Pukul 18.30 WITA<br>
-       UpperHills Makassar
-    </p>
-  </div>
-</section>
+    <span>QS. Ar-Rum : 21</span>
+  </section>
 
-<!-- COUNTDOWN -->
-<section class="countdown">
-  <h3>Menuju Hari Bahagia</h3>
-  <div id="timer"></div>
-</section>
+  <!-- Mempelai -->
+  <section class="mempelai">
+    <div>
+      <h2>Farah Salsabilla Ariama</h2>
+      <p>Putri dari Bapak Arsuni & Ibu Mariyani</p>
+    </div>
+    <span class="and">&</span>
+    <div>
+      <h2>Muhammad Ghifary Fajrin</h2>
+      <p>Putra dari Bapak Amir Taat & Ibu Ratih</p>
+    </div>
+  </section>
 
-<!-- MAP -->
-<section class="map">
-  <h3>Lokasi Acara</h3>
-  <iframe 
-    src="https://www.google.com/maps?q=UpperHills+Makassar&output=embed"
-    loading="lazy">
-  </iframe>
-</section>
+  <!-- Acara -->
+  <section class="acara">
+    <div class="box">
+      <h3>Akad Nikah</h3>
+      <p>Jumat, 21 Februari 2030<br>Pukul 12.00 WITA<br>Claro Makassar</p>
+    </div>
+    <div class="box">
+      <h3>Resepsi</h3>
+      <p>Sabtu, 22 Februari 2030<br>Pukul 18.30 WITA<br>UpperHills Makassar</p>
+    </div>
+  </section>
 
-<!-- PENUTUP -->
-<section class="penutup">
-  <p>
-    Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila
-    Bapak/Ibu/Saudara/i berkenan hadir serta memberikan doa restu.
-  </p>
-  <h2>Farah & Ghifary</h2>
-</section>
+  <!-- Countdown -->
+  <section class="countdown">
+    <h3>Menuju Hari Bahagia</h3>
+    <div id="timer"></div>
+  </section>
 
-<link rel="stylesheet" href="style.css">
+  <!-- Lokasi -->
+  <section class="map">
+    <h3>Lokasi Acara</h3>
+    <iframe src="https://www.google.com/maps?q=UpperHills+Makassar&output=embed" loading="lazy"></iframe>
+  </section>
 
-<script src="script.js"></script>
+  <!-- Penutup -->
+  <section class="penutup">
+    <p>Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir serta memberikan doa restu.</p>
+    <h2>Farah & Ghifary</h2>
+  </section>
+
+  <!-- JS -->
+  <script src="script.js"></script>
 </body>
 </html>
-
-<!-- Falling petals -->
-<div id="petals"></div>
-
-

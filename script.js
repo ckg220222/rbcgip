@@ -43,7 +43,7 @@ button.addEventListener('click', () => {
 
   // Scroll halaman sedikit ke bawah
   window.scrollBy({
-    top: 100,
+    top: -100,
     left: 0,
     behavior: 'smooth'
   });
@@ -51,3 +51,4 @@ button.addEventListener('click', () => {
   // Sembunyikan tombol setelah ditekan
   button.style.display = 'none';
 });
+

@@ -15,20 +15,9 @@
 <div id="petals"></div>
 
 <!-- Musik -->
-<button id="playMusic">▶ Putar Musik</button>
 <audio id="weddingMusic" loop>
   <source src="music.mp3" type="audio/mpeg">
 </audio>
-
-<script>
-  const button = document.getElementById('playMusic');
-  const music = document.getElementById('weddingMusic');
-
-  button.addEventListener('click', () => {
-    music.play();
-    button.style.display = 'none'; // sembunyikan tombol setelah diputar
-  });
-</script>
 
 
 <!-- COVER -->
@@ -109,4 +98,5 @@
 
 <!-- Falling petals -->
 <div id="petals"></div>
+
 

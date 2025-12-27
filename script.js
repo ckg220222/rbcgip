@@ -36,3 +36,14 @@ for (let i = 0; i < totalPetals; i++) {
 
   petalsContainer.appendChild(petal);
 }
+
+const music = document.getElementById('weddingMusic');
+let musicPlayed = false;
+
+// Fungsi mulai musik saat scroll pertama kali
+window.addEventListener('scroll', () => {
+  if (!musicPlayed) {
+    music.play().catch(err => console.log('Browser memblokir autoplay:', err));
+    musicPlayed = true;
+  }
+});
